@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render, redirect
 
 def index(request):
     if request.user.is_authenticated:
@@ -6,3 +7,5 @@ def index(request):
     else:
         return HttpResponse('<p>Welcome to <a href="https://djangocas.dev">django-cas-ng</a>.</p><p><a href="/accounts/login">Login</a></p>')
 
+def test(request):
+    return render(request,'index.html')

@@ -1,1 +1,5 @@
 __init__.py
+migrations
+__pycache__
+.DS_Store
+*.cpython-36.pyc
