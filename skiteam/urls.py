@@ -19,9 +19,9 @@ import django_cas_ng.views
 from .views import *
 
 urlpatterns = [
-    path('', include('pwa.urls')),
     path('admin/', admin.site.urls),
     path('accounts/login', django_cas_ng.views.LoginView.as_view()),
     path('accounts/logout', django_cas_ng.views.LogoutView.as_view()),
-    path('e',test)
+    path('e',test),
+    path('', include('pwa.urls')),
 ]

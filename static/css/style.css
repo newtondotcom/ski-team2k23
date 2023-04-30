@@ -1,0 +1,189 @@
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background-color: white;
+  margin: 20px;
+  /*background-image: url("https://cdn.futura-sciences.com/buildsv6/images/wide1920/4/f/6/4f6ab89af9_134394_flocon-neige6.jpg");*/
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+h1:hover {
+  color: blue;
+}
+
+announcements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: skyblue;
+  border : black 1px;
+  padding: 20px;
+}
+
+
+.announcements li {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  transition: transform .5s ease;
+}
+
+.announcements:hover li  {
+  transform: scale(1.02);
+  transform:translateX(10px);
+}
+
+
+li:first-child {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+li:last-child {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+ol {
+  /*overflow: hidden;*/
+  border-radius: 40px;
+  margin: 10px;
+}
+
+.announcements h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color:black;
+}
+
+events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.events:hover li  {
+  transform: scale(1.02);
+}
+
+.events li {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  padding: 10px;
+}
+
+li img {
+  max-width: 30%;
+  height: auto;
+  margin-right: 10px;
+  margin-left: 20px; /* ajoute une marge de 20px à gauche de l'image */
+}
+
+
+li p {
+  margin: 0;
+}
+
+.events h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  display: inline
+  
+}
+
+p {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+}
+
+a {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: orange;
+}
+
+texte {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: orange;
+}
